@@ -34,7 +34,7 @@ const App = () =>  {
   }  
 
   const createImageComponent = () => {
-    let imageSet = searchQuery === "" ? imageList : imageSet = filterImages()
+    let imageSet = searchQuery === "" ? imageList : filterImages()
 
     return imageSet.map((image) => 
       <Image image={image} /> 
@@ -64,50 +64,5 @@ const App = () =>  {
 export default App
 
 
-  // function name () {}        -> hoisted up 
-  // vs const name = () => {}   -> 
-  // [...]
 
- // useEffect(()=>{
-
-  //   // Body of useEffect => 
-  //     // Function/ stufffff you do when useEffect invokes
-  //     // someFunction('hello')
-
-  //   // return () => {
-  //     // Function that is invoked when unmounting
-  //       // ComponentWillUnmount
-  //     // someUnmountingFunction('do something')
-  //   // }
-
-  //   // {Image: {imgName: 'hello', imgLink: 'http://stfffff.com'}}
-  //   // {Image: {}}
-
-
-  // },
-  // // Array dictacts if JUST MOUNT or MOUNT + UPDATE
-  //   //If empty, JUST mount
-  //   // If not, MOUNT + UPDATE
-  // [])
-
-
-  // useEffect(() => {
-
-  //   // RUN FOR MOUNT OR UPDATE
-
-  //   setImageList(loadImages())
-  //   // First iteration (componentdidmount) => imageList = []
-  //     // Invoke your inside useEffect function BECAUSE imageList gets updated as you MOUNTED
-  //   // 2nd iteration (componentwillupdate) => imageList = [stuff]
-  //     // Invoke your inside useEffect function BECAUSE imageList gets updated as you UPDATE
-  //   // NO more iterations/invocations BECAUSE button is DISABLED
-    
-
-    
-
-  //   // return
-  // }, [
-  //   somethingList
-  //   // Typically use variable that you MANUALLY change
-  // ] ) 
 
