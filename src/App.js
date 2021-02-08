@@ -54,7 +54,7 @@ const App = () =>  {
         <ul className="image-grid">
           {createImageComponent()}
         </ul>
-        <button onClick={loadImages}> LOAD MORE IMAGES </button>
+        <button onClick={loadImages}> ~ LOAD MORE IMAGES! ~ </button>
 
       </header>
     </div>
