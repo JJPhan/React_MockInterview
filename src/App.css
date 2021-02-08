@@ -36,3 +36,33 @@
     transform: rotate(360deg);
   }
 }
+
+.imageElement {
+  height: 100px;
+  width: 100px;
+  transition: transform .2s;
+}
+
+.imageElement:hover {
+  transform: scale(1.5);
+}
+
+.imageContainer {
+  display: flex;
+  align-content: flex-start;
+  text-align: center;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media only screen and (max-width: 600px) {
+  .image-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+
+
