@@ -28,7 +28,7 @@ const App = () =>  {
     let filterImageList = 
       imageList.filter(image => 
         searchTerms.every(term => 
-          image.author.includes(term)))
+          image.author.toLowerCase().includes(term.toLowerCase())))
     
     return filterImageList
   }  
